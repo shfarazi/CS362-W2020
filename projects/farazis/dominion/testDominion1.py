@@ -14,7 +14,8 @@ from collections import defaultdict
 player_names = ["Annie","*Ben","*Carla"]
 
 #Define get nv (number of victory cards)
-nV = testUtility.get_nv(len(player_names))
+#[Bug Introduced]: changing the number of victory cards to zero
+nV = 0
 
 #Define get nv (number of curse cards)
 nC = testUtility.get_nc(len(player_names))

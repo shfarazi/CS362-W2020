@@ -22,6 +22,10 @@ nC = testUtility.get_nc(len(player_names))
 #Define box
 box = testUtility.get_boxes(nV)
 
+#[Bug Introduced]: changing all cards to Market
+for item in box:
+    box[item] = [Dominion.Market()]*10
+
 #Define supply order
 supply_order = testUtility.get_supply_order()
 
